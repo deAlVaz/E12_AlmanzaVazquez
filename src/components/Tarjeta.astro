@@ -1,0 +1,19 @@
+---
+export interface Props {
+	titulo: string;
+	cuerpo: string;
+	href: string;
+    fuente: string;
+    imgDescrip: string;
+}
+
+const { href, titulo, cuerpo, fuente, imgDescrip } = Astro.props;
+---
+<div class="card" style="width: 100%;">
+    <img src={fuente} class="card-img-top" alt={imgDescrip}>
+    <div class="card-body">
+      <h5 class="card-title">{titulo}</h5>
+      <p class="card-text">{cuerpo}</p>
+      <a href={href} class="btn btn-primary">Saber más</a>
+    </div>
+  </div>

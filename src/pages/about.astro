@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="AlVaz | Sobre Mi" description="Acerca de" palabras="Artista, descripcion, Arte, ArteDigital, Video, Ilustracion, Ilustraciones" author="AlVaz">
+	<main>
+		<h1>Sobre Mi<span class="text-warning">|AlVaz|</span></h1>
+		<p class="instructions text-light">
+			Hola, te contaré un poco sobre quien soy...
+		</p>
+
+		<section class="container p-10 m-10 text-center position-relative">
+			<div class= "row">
+				<div class ="col-lg-12" >
+					<div class="row">
+						<div class="" style="height: 50vh; text-lg-start">
+						<p>
+							<img src="/img/foto01.jpg" class="img-fluid rounded" alt="imagen agregado" width="120%">
+						</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container p-3 m-3 text-center ">
+			<div class="row align-items-center">
+					<div class="col align-self-center" style="width:50vh  text-md-start">
+						<p class="fs-3">
+							Mi nombre es Diego Almanza. Trabajo bajo el nombre de AlVaz, Soy Artista Digital enfocado en la creacion de diseños de logotipos y postproduccion de contenido fotografico, así como ilustrador. 
+						</p>
+					</div>
+					<div class="col align-self-center" style="width:50vh text-md-end">
+						<p class="fs-3">
+							Soy proveniente del estado de Guanajuato. Algunos de mis trabajos se encuentran en mi perfil de instagram. Mientras que el resto se encuentra disperso por la web. 
+						</p>
+					</div>
+					
+				</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 100vh;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: rgb(0, 0, 0);
+		background-size: 400%;
+		background-position: 0%;
+	}
+	
+</style>

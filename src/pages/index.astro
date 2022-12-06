@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Carousel from '../components/Carousel item.astro';
+import "../styles/estilos_principales.scss"
+---
+
+<Layout title="AlVaz | Inicio" description="Inicio de la pagina" palabras="Artista, descripcion, Arte, ArteDigital, Video, Ilustracion, Ilustraciones" author="AlVaz">
+	<main>		
+<!-- -->	
+		<section class="container-fluid p-10 m-10 text-center">
+			<div class= "row">
+				<div class ="col-lg-12" style="height: 80vh;">
+					<div class="row">
+						<p>
+							<video src="/vid/VID.mp4"  autoplay muted loop></video>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container-fluid p-10 m-10 align-items-center">
+			<div class="row justify-content-center">	   
+				<div class="col-lg-4" style="top:20%; start: 30%; height: 30vh; text-lg-start">
+					<p>
+						<img src="/img/foto1.png" class="rounded-circle" alt="imagen agregado" width="120%">
+					</p>
+				</div>
+				<div class="col-lg-4 align-self-center" style="top:20%; start: 30%; height: 30vh; text-lg-start ">
+					<div class="text-bg-warning p-3 rounded">
+						<p class="fs-1 fw-bolder ">
+							AlVaz
+						</p>
+						<p class="fs-3 lh-lg ">
+							Artista Digital independiente enfocado en la creacion de diseños de logotipos, ilustracion y desarrollo de pos-produccion de fotografias.
+						</p>
+					</div>
+				  </div> 
+			</div>
+			
+			
+		</section>
+		<!-- Seccion frase -->
+		<section class="container-fluid p-3 m-2 text-center position-relative">
+			<div class= "row">
+				<div class ="col-lg-4" style="top:20%; start: 30%; height: 30vh; text-lg-start">
+					
+					<div class="row">
+						<div class= "position-absolute" style="top:50%; start: 50%; color: #000000">
+							<div class="text-bg-info p-3 rounded">
+							<p class="fs-2 fst-italic">
+								"El arte nos hace sentir menos solos. Nos hace pensar: alguien ha pensado esto, alguien más ha tenido estos sentimientos."  -Alan Moore
+							</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class= "container-fluid p-10 m-10 top:50%">
+
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="/img/TC1.jpg" class="d-md-block w-100" style=" width: 75vh; height: 70vh" alt="Imagen 1">
+					<div class="carousel-caption d-none d-md-block text-bg-dark p-3">
+					  <h5>Diseño de Logotipos</h5>
+					  <p>Desarrollo de diversos estilos de Logotipos en monogramas e isotipos.</p>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<img src="/img/TC2.jpg" class="d-block w-100" style="height: 70vh" alt="Imagen 2">
+					<div class="carousel-caption d-none d-md-block text-bg-dark p-3">
+					  <h5>Ilustraciones</h5>
+					  <p>Personalizacion de ideas para desarrollo de imagen de empresas.</p>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<img src="/img/8.jpg" class="d-block w-100" style="height: 70vh" alt="Imagen 3">
+					<div class="carousel-caption d-none d-md-block text-bg-dark p-3">
+					  <h5>Edicion de fotografias</h5>
+					  <p>Apoyo en la edicion de fotografias para la imagen profesional de las empresas.</p>
+					</div>
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+			
+			</section>
+		
+
+		<section class="container-fluid p-2 m-3 text-center position-relative">
+			<div class= "row">
+				<div class ="col-lg-4 " style="height: 30vh; top:50%; width:50vh;">
+					
+					<div class="row">
+						<div class= "position-absolute p-3 mb-2 bg-danger text-white rounded" style="top:50%; start: 50%; color: #000000">
+							<h1>
+								CONTENIDO DE VALOR
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid p-2 m-3 text-center position-relative">
+			<div class="row">
+				<div class="col-4 " style="start:50%">
+					<a href="img/CV.pdf" download="CV.pdf">
+					<button type="button" class="btn btn-primary">Descarga mi CV</button>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		
+
+
+	
+	</main>
+</Layout>
+

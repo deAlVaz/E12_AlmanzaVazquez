@@ -1,0 +1,108 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Galeria1, {GaleriaConfig} from "../components/Galeria1.astro";
+import GaleriaModal, { GaleriaModalConfig } from "../components/GaleriaModal.astro";
+
+
+const configGaleriaPrincipal: GaleriaConfig = {
+    id: "principal",
+    columnas : 
+    [
+        {
+            imagenes: 
+            [
+                {
+                    titulo: "Imagen 1",
+                    alt: "imagen 1",
+                    src: "/img/2.jpg"
+                },
+                {
+                    titulo: "Imagen 5",
+                    alt: "imagen 5",
+                    src: "/img/3.jpg"
+                },
+                {
+                    titulo: "Imagen 9",
+                    alt: "imagen 9",
+                    src: "/img/6.jpg"
+                },
+            ],
+        },
+        {
+            imagenes: 
+            [
+                {
+                    titulo: "Imagen 2",
+                    alt: "imagen 2",
+                    src: "/img/9.jpg"
+                },
+                {
+                    titulo: "Imagen 6",
+                    alt: "imagen 6",
+                    src: "/img/4.jpg"
+                },
+                {
+                    titulo: "Imagen 10",
+                    alt: "imagen 10",
+                    src: "/img/12.jpg"
+                },
+            ],
+        },
+        {
+            imagenes: 
+            [
+                {
+                    titulo: "Imagen 3",
+                    alt: "imagen 3",
+                    src: "/img/5.jpg"
+                },
+                {
+                    titulo: "Imagen 11",
+                    alt: "imagen 11",
+                    src: "/img/13.jpg"
+                },
+            ],
+        },
+        {
+            imagenes: 
+            [
+                {
+                    titulo: "Imagen 4",
+                    alt: "imagen 4",
+                    src: "/img/10.jpg"
+                },
+                {
+                    titulo: "Imagen 8",
+                    alt: "imagen 8",
+                    src: "/img/11.jpg"
+                },
+                {
+                    titulo: "Imagen 12",
+                    alt: "imagen 12",
+                    src: "/img/E1.png"
+                },
+                {
+                    titulo: "Imagen 12",
+                    alt: "imagen 12",
+                    src: "/img/8.jpg"
+                },
+            ],
+        },
+    ]
+};
+
+const configGaleriaModalPrincipal: GaleriaModalConfig = {
+    id: configGaleriaPrincipal.id, titulo: "Galeria - Fotos" 
+};
+---
+
+<Layout title="AlVaz | Galeria" description="Galería" palabras="Artista, descripcion, Arte, ArteDigital, Video, Ilustracion, Ilustraciones" author="AlVaz" >
+    <main>
+        <h1 class="text-bg-danger p-3 position-relative">Galería</h1>
+        <Galeria1 config={configGaleriaPrincipal}/>
+
+        <h1 class=" text-center position-relative"></h1>
+
+        <GaleriaModal config={configGaleriaModalPrincipal}/>
+    </main>
+</Layout>
